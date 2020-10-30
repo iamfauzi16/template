@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-body {}
-
-.container {
-    background-color: rgba(5, 0, 48, 0.685);
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.hero {
+#hero {
+    background-color: #769841;
+}
+
+#content {
+    background-color: #EDEDE9;
+}
+
+.hero-child {
     margin-top: 50px;
     text-align: center;
 }
@@ -39,6 +45,37 @@ img.img-produk {
 }
 
 
+/* Content */
+
+
+#img-content img {
+    width: 200px;
+    margin-top: 30px;
+
+}
+
+#img-content {
+    text-align: center;
+}
+
+
+div#deskripsi-content {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.p-content {
+    font-size: 12px;
+    text-align: justify;
+}
+
+#btn-content {
+    text-align: center;
+}
+
+/* CSS Content Selesai */
+
+
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
@@ -61,7 +98,7 @@ img.img-produk {
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
     }
-    .hero {
+    .hero-child {
         margin-top: 50px;
         text-align: left;
         margin-right: 50px;
@@ -72,9 +109,60 @@ img.img-produk {
     }
     #master img {
         width: 150px;
+        
     }
-    .content {
-        width: 100%;
-        background-color: rgba(3, 0, 26, 0.685);
+
+
+    /* Content */
+    #content {
+        width: auto;
+        background-color: #EDEDE9;
+
     }
+
+    img.img-in-content {
+        width: 200px;
+        margin-right: 50px;
+    }
+
+    #img-content {
+        margin-top: 50px;
+    }
+
+    #img-content img {
+        width: 250px;
+    }
+
+    div#deskripsi-content {
+        right: 100px;
+    }
+    
+
+    div#deskripsi-content {
+        margin-top: 5em;
+        text-align: left;
+        color: #769841;
+    }
+
+
+    .p-content {
+        font-size: 14px;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: justify;
+    }
+
+    #btn-content {
+        text-align: center;
+    }
+
+    /* Finish Content */
 }
+
+
+
+
+
+
+
+
